@@ -1,6 +1,6 @@
 # Blockchain Integration web3swift
 
-This project is a sample for working with ehtereum blockchain and smart-contract with using of Web3Swift .
+This project is a sample for working with ethereum blockchain and smart-contract with using of Web3Swift .
 
 ## Pre-requirement
 
