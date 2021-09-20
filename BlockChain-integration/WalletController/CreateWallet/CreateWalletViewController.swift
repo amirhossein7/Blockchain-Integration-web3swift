@@ -13,6 +13,7 @@ class CreateWalletViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!{
         didSet{
             textView.text = "please wait ..."
+            textView.isEditable = false
         }
     }
     
@@ -38,15 +39,9 @@ class CreateWalletViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DispatchQueue.main.async { [weak self] in
-            guard let self = self else {return}
-            self.textView.isEditable = false
-            self.textView.textColor = .white
-            self.create { seeds in
-                self.activateView(seeds)
-            }
+        self.create { seeds in
+            self.activateView(seeds)
         }
-
     }
 
     

@@ -53,7 +53,7 @@ class Web3Manager {
                 throw Web3Error.processingError(desc: error.localizedDescription)
             }
         }else {
-            throw Web3Error.inputError(desc: "Error: seed words incorrected !!")
+            throw Web3Error.inputError(desc: "Seed words incorrected !!")
         }
         
     }

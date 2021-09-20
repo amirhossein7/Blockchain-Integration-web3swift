@@ -45,7 +45,9 @@ class WalletViewController: UIViewController {
     
     @objc
     private func showRetreiveController(){
-        
+        let controller = RetrieveWalletViewController(nibName: "RetrieveWalletViewController", bundle: nil)
+        controller.modalPresentationStyle = .fullScreen
+        self.present(controller, animated: true, completion: nil)
     }
     
     @objc
