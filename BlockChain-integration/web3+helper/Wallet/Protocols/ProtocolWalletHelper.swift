@@ -8,11 +8,6 @@
 
 import Foundation
 
-protocol ProtocolWalletHelper: ProtocolCreateWallet , ProtocolLoadWallet {
-    func isValid(seedPhrase mnemonics: String) -> Bool
-}
-
-
 protocol ProtocolCreateWallet {
     func createWalletBySeedPhrase(password: String) -> WalletModel
 }

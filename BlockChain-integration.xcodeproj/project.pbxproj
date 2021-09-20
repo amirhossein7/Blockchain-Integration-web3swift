@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26F49A88C0FD487B5F306024 /* Pods_BlockChain_integration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C1A66E05297B4A61DE7B5F /* Pods_BlockChain_integration.framework */; };
+		39DFD0B68B3F3A15F1B021AD /* Pods_BlockChain_integration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10380C6E7897F305FB926975 /* Pods_BlockChain_integration.framework */; };
+		6007BF6426EB45DC0013BA77 /* UnRegisterTopics.json in Resources */ = {isa = PBXBuildFile; fileRef = 6007BF6326EB45DC0013BA77 /* UnRegisterTopics.json */; };
+		6007BF6626EB47150013BA77 /* jsonRPC.json in Resources */ = {isa = PBXBuildFile; fileRef = 6007BF6526EB47150013BA77 /* jsonRPC.json */; };
 		6068CFFA26E393D600E7F2B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6068CFF926E393D600E7F2B4 /* AppDelegate.swift */; };
 		6068CFFC26E393D600E7F2B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6068CFFB26E393D600E7F2B4 /* SceneDelegate.swift */; };
 		6068CFFE26E393D600E7F2B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6068CFFD26E393D600E7F2B4 /* ViewController.swift */; };
@@ -17,16 +19,24 @@
 		6068D01026E39AA000E7F2B4 /* ABI_info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6068D00F26E39AA000E7F2B4 /* ABI_info.swift */; };
 		6068D01D26E39AD300E7F2B4 /* WalletInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6068D01326E39AD300E7F2B4 /* WalletInfo.swift */; };
 		6068D01E26E39AD300E7F2B4 /* Web3Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6068D01426E39AD300E7F2B4 /* Web3Manager.swift */; };
-		6068D01F26E39AD300E7F2B4 /* LoadWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6068D01626E39AD300E7F2B4 /* LoadWallet.swift */; };
-		6068D02026E39AD300E7F2B4 /* CreateWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6068D01726E39AD300E7F2B4 /* CreateWallet.swift */; };
 		6068D02126E39AD300E7F2B4 /* WalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6068D01926E39AD300E7F2B4 /* WalletModel.swift */; };
 		6068D02226E39AD300E7F2B4 /* ProtocolWalletHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6068D01B26E39AD300E7F2B4 /* ProtocolWalletHelper.swift */; };
 		6068D02326E39AD300E7F2B4 /* ProtocolWalletInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6068D01C26E39AD300E7F2B4 /* ProtocolWalletInfo.swift */; };
 		6068D02626E39C9300E7F2B4 /* Web3Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6068D02526E39C9300E7F2B4 /* Web3Service.swift */; };
+		6072B17826E8BBA00064B76E /* Web3WebsocketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6072B17726E8BBA00064B76E /* Web3WebsocketProvider.swift */; };
+		6072B17B26E8C27D0064B76E /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6072B17A26E8C27D0064B76E /* RepeatingTimer.swift */; };
+		6072B17E26E8CC940064B76E /* RegisterTopics.json in Resources */ = {isa = PBXBuildFile; fileRef = 6072B17D26E8CC940064B76E /* RegisterTopics.json */; };
+		608F07EF26F88A3F00EDB906 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608F07ED26F88A3F00EDB906 /* WalletViewController.swift */; };
+		608F07F026F88A3F00EDB906 /* WalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 608F07EE26F88A3F00EDB906 /* WalletViewController.xib */; };
+		608F07F526F89F8100EDB906 /* CreateWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608F07F326F89F8100EDB906 /* CreateWalletViewController.swift */; };
+		608F07F626F89F8100EDB906 /* CreateWalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 608F07F426F89F8100EDB906 /* CreateWalletViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		37132DCED58055F087D99E5E /* Pods-BlockChain-integration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockChain-integration.debug.xcconfig"; path = "Target Support Files/Pods-BlockChain-integration/Pods-BlockChain-integration.debug.xcconfig"; sourceTree = "<group>"; };
+		10380C6E7897F305FB926975 /* Pods_BlockChain_integration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlockChain_integration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2227AD6CC9DF019553637AAE /* Pods-BlockChain-integration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockChain-integration.debug.xcconfig"; path = "Target Support Files/Pods-BlockChain-integration/Pods-BlockChain-integration.debug.xcconfig"; sourceTree = "<group>"; };
+		6007BF6326EB45DC0013BA77 /* UnRegisterTopics.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UnRegisterTopics.json; sourceTree = "<group>"; };
+		6007BF6526EB47150013BA77 /* jsonRPC.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jsonRPC.json; sourceTree = "<group>"; };
 		6068CFF626E393D600E7F2B4 /* BlockChain-integration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlockChain-integration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6068CFF926E393D600E7F2B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6068CFFB26E393D600E7F2B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,14 +48,18 @@
 		6068D00F26E39AA000E7F2B4 /* ABI_info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABI_info.swift; sourceTree = "<group>"; };
 		6068D01326E39AD300E7F2B4 /* WalletInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletInfo.swift; sourceTree = "<group>"; };
 		6068D01426E39AD300E7F2B4 /* Web3Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Web3Manager.swift; sourceTree = "<group>"; };
-		6068D01626E39AD300E7F2B4 /* LoadWallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadWallet.swift; sourceTree = "<group>"; };
-		6068D01726E39AD300E7F2B4 /* CreateWallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateWallet.swift; sourceTree = "<group>"; };
 		6068D01926E39AD300E7F2B4 /* WalletModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletModel.swift; sourceTree = "<group>"; };
 		6068D01B26E39AD300E7F2B4 /* ProtocolWalletHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolWalletHelper.swift; sourceTree = "<group>"; };
 		6068D01C26E39AD300E7F2B4 /* ProtocolWalletInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolWalletInfo.swift; sourceTree = "<group>"; };
 		6068D02526E39C9300E7F2B4 /* Web3Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3Service.swift; sourceTree = "<group>"; };
-		74C1A66E05297B4A61DE7B5F /* Pods_BlockChain_integration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlockChain_integration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		934B70713C08212425C1B303 /* Pods-BlockChain-integration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockChain-integration.release.xcconfig"; path = "Target Support Files/Pods-BlockChain-integration/Pods-BlockChain-integration.release.xcconfig"; sourceTree = "<group>"; };
+		6072B17726E8BBA00064B76E /* Web3WebsocketProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3WebsocketProvider.swift; sourceTree = "<group>"; };
+		6072B17A26E8C27D0064B76E /* RepeatingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
+		6072B17D26E8CC940064B76E /* RegisterTopics.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RegisterTopics.json; sourceTree = "<group>"; };
+		608F07ED26F88A3F00EDB906 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		608F07EE26F88A3F00EDB906 /* WalletViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletViewController.xib; sourceTree = "<group>"; };
+		608F07F326F89F8100EDB906 /* CreateWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletViewController.swift; sourceTree = "<group>"; };
+		608F07F426F89F8100EDB906 /* CreateWalletViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateWalletViewController.xib; sourceTree = "<group>"; };
+		696EE8D38B2CE84AF2601F54 /* Pods-BlockChain-integration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockChain-integration.release.xcconfig"; path = "Target Support Files/Pods-BlockChain-integration/Pods-BlockChain-integration.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26F49A88C0FD487B5F306024 /* Pods_BlockChain_integration.framework in Frameworks */,
+				39DFD0B68B3F3A15F1B021AD /* Pods_BlockChain_integration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +80,7 @@
 				6068CFF826E393D600E7F2B4 /* BlockChain-integration */,
 				6068CFF726E393D600E7F2B4 /* Products */,
 				9C5A6ACD44A9D4A5C1F7CC7F /* Pods */,
-				A2138B23B383B4F298DE56E6 /* Frameworks */,
+				9CB79EAD8411B5A9EF646830 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,7 +95,7 @@
 		6068CFF826E393D600E7F2B4 /* BlockChain-integration */ = {
 			isa = PBXGroup;
 			children = (
-				6068D00D26E39A6700E7F2B4 /* web3+helper */,
+				608F07EC26F88A0500EDB906 /* WalletController */,
 				6068CFF926E393D600E7F2B4 /* AppDelegate.swift */,
 				6068CFFB26E393D600E7F2B4 /* SceneDelegate.swift */,
 				6068CFFD26E393D600E7F2B4 /* ViewController.swift */,
@@ -89,6 +103,7 @@
 				6068D00226E393D900E7F2B4 /* Assets.xcassets */,
 				6068D00426E393D900E7F2B4 /* LaunchScreen.storyboard */,
 				6068D00726E393D900E7F2B4 /* Info.plist */,
+				6068D00D26E39A6700E7F2B4 /* web3+helper */,
 			);
 			path = "BlockChain-integration";
 			sourceTree = "<group>";
@@ -96,6 +111,8 @@
 		6068D00D26E39A6700E7F2B4 /* web3+helper */ = {
 			isa = PBXGroup;
 			children = (
+				6072B17C26E8CC750064B76E /* Entities */,
+				6072B17926E8C25D0064B76E /* Helpers */,
 				6068D02426E39C5F00E7F2B4 /* SmartContract */,
 				6068D01126E39AD300E7F2B4 /* Wallet */,
 				6068D00E26E39A8600E7F2B4 /* ABIs */,
@@ -126,18 +143,8 @@
 			children = (
 				6068D01326E39AD300E7F2B4 /* WalletInfo.swift */,
 				6068D01426E39AD300E7F2B4 /* Web3Manager.swift */,
-				6068D01526E39AD300E7F2B4 /* UseCase */,
 			);
 			path = Manager;
-			sourceTree = "<group>";
-		};
-		6068D01526E39AD300E7F2B4 /* UseCase */ = {
-			isa = PBXGroup;
-			children = (
-				6068D01626E39AD300E7F2B4 /* LoadWallet.swift */,
-				6068D01726E39AD300E7F2B4 /* CreateWallet.swift */,
-			);
-			path = UseCase;
 			sourceTree = "<group>";
 		};
 		6068D01826E39AD300E7F2B4 /* Model */ = {
@@ -161,23 +168,69 @@
 			isa = PBXGroup;
 			children = (
 				6068D02526E39C9300E7F2B4 /* Web3Service.swift */,
+				6072B17726E8BBA00064B76E /* Web3WebsocketProvider.swift */,
 			);
 			path = SmartContract;
+			sourceTree = "<group>";
+		};
+		6072B17926E8C25D0064B76E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6072B17A26E8C27D0064B76E /* RepeatingTimer.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6072B17C26E8CC750064B76E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				6072B17D26E8CC940064B76E /* RegisterTopics.json */,
+				6007BF6326EB45DC0013BA77 /* UnRegisterTopics.json */,
+				6007BF6526EB47150013BA77 /* jsonRPC.json */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		608F07EC26F88A0500EDB906 /* WalletController */ = {
+			isa = PBXGroup;
+			children = (
+				608F07F226F89EF400EDB906 /* RetrieveWallet */,
+				608F07F126F89EBD00EDB906 /* CreateWallet */,
+				608F07ED26F88A3F00EDB906 /* WalletViewController.swift */,
+				608F07EE26F88A3F00EDB906 /* WalletViewController.xib */,
+			);
+			path = WalletController;
+			sourceTree = "<group>";
+		};
+		608F07F126F89EBD00EDB906 /* CreateWallet */ = {
+			isa = PBXGroup;
+			children = (
+				608F07F326F89F8100EDB906 /* CreateWalletViewController.swift */,
+				608F07F426F89F8100EDB906 /* CreateWalletViewController.xib */,
+			);
+			path = CreateWallet;
+			sourceTree = "<group>";
+		};
+		608F07F226F89EF400EDB906 /* RetrieveWallet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RetrieveWallet;
 			sourceTree = "<group>";
 		};
 		9C5A6ACD44A9D4A5C1F7CC7F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				37132DCED58055F087D99E5E /* Pods-BlockChain-integration.debug.xcconfig */,
-				934B70713C08212425C1B303 /* Pods-BlockChain-integration.release.xcconfig */,
+				2227AD6CC9DF019553637AAE /* Pods-BlockChain-integration.debug.xcconfig */,
+				696EE8D38B2CE84AF2601F54 /* Pods-BlockChain-integration.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		A2138B23B383B4F298DE56E6 /* Frameworks */ = {
+		9CB79EAD8411B5A9EF646830 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				74C1A66E05297B4A61DE7B5F /* Pods_BlockChain_integration.framework */,
+				10380C6E7897F305FB926975 /* Pods_BlockChain_integration.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -189,17 +242,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6068D00A26E393D900E7F2B4 /* Build configuration list for PBXNativeTarget "BlockChain-integration" */;
 			buildPhases = (
-				30A3D2E455592341B2774A46 /* [CP] Check Pods Manifest.lock */,
+				33119CCF4C5841D093F7AE6D /* [CP] Check Pods Manifest.lock */,
 				6068CFF226E393D600E7F2B4 /* Sources */,
 				6068CFF326E393D600E7F2B4 /* Frameworks */,
 				6068CFF426E393D600E7F2B4 /* Resources */,
-				C7AE3DD96AB324BFC0779208 /* [CP] Embed Pods Frameworks */,
+				A45FF4EF3B5343F3446CEFBE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "BlockChain-integration";
+			packageProductDependencies = (
+			);
 			productName = "BlockChain-integration";
 			productReference = 6068CFF626E393D600E7F2B4 /* BlockChain-integration.app */;
 			productType = "com.apple.product-type.application";
@@ -227,6 +282,8 @@
 				Base,
 			);
 			mainGroup = 6068CFED26E393D600E7F2B4;
+			packageReferences = (
+			);
 			productRefGroup = 6068CFF726E393D600E7F2B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -242,15 +299,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				6068D00626E393D900E7F2B4 /* LaunchScreen.storyboard in Resources */,
+				608F07F026F88A3F00EDB906 /* WalletViewController.xib in Resources */,
+				6007BF6426EB45DC0013BA77 /* UnRegisterTopics.json in Resources */,
+				608F07F626F89F8100EDB906 /* CreateWalletViewController.xib in Resources */,
+				6072B17E26E8CC940064B76E /* RegisterTopics.json in Resources */,
 				6068D00326E393D900E7F2B4 /* Assets.xcassets in Resources */,
 				6068D00126E393D600E7F2B4 /* Main.storyboard in Resources */,
+				6007BF6626EB47150013BA77 /* jsonRPC.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		30A3D2E455592341B2774A46 /* [CP] Check Pods Manifest.lock */ = {
+		33119CCF4C5841D093F7AE6D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,7 +334,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C7AE3DD96AB324BFC0779208 /* [CP] Embed Pods Frameworks */ = {
+		A45FF4EF3B5343F3446CEFBE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -296,18 +358,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6068D01F26E39AD300E7F2B4 /* LoadWallet.swift in Sources */,
 				6068D01026E39AA000E7F2B4 /* ABI_info.swift in Sources */,
 				6068D02226E39AD300E7F2B4 /* ProtocolWalletHelper.swift in Sources */,
-				6068D02026E39AD300E7F2B4 /* CreateWallet.swift in Sources */,
 				6068CFFE26E393D600E7F2B4 /* ViewController.swift in Sources */,
+				6072B17B26E8C27D0064B76E /* RepeatingTimer.swift in Sources */,
 				6068CFFA26E393D600E7F2B4 /* AppDelegate.swift in Sources */,
 				6068D02626E39C9300E7F2B4 /* Web3Service.swift in Sources */,
 				6068D01D26E39AD300E7F2B4 /* WalletInfo.swift in Sources */,
 				6068D02326E39AD300E7F2B4 /* ProtocolWalletInfo.swift in Sources */,
 				6068D01E26E39AD300E7F2B4 /* Web3Manager.swift in Sources */,
+				6072B17826E8BBA00064B76E /* Web3WebsocketProvider.swift in Sources */,
 				6068D02126E39AD300E7F2B4 /* WalletModel.swift in Sources */,
 				6068CFFC26E393D600E7F2B4 /* SceneDelegate.swift in Sources */,
+				608F07F526F89F8100EDB906 /* CreateWalletViewController.swift in Sources */,
+				608F07EF26F88A3F00EDB906 /* WalletViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,7 +515,7 @@
 		};
 		6068D00B26E393D900E7F2B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37132DCED58055F087D99E5E /* Pods-BlockChain-integration.debug.xcconfig */;
+			baseConfigurationReference = 2227AD6CC9DF019553637AAE /* Pods-BlockChain-integration.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,7 +535,7 @@
 		};
 		6068D00C26E393D900E7F2B4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 934B70713C08212425C1B303 /* Pods-BlockChain-integration.release.xcconfig */;
+			baseConfigurationReference = 696EE8D38B2CE84AF2601F54 /* Pods-BlockChain-integration.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

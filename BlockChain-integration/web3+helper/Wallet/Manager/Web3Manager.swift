@@ -10,13 +10,13 @@ import Foundation
 import web3swift
 
 
-class Web3Manager: ProtocolWalletHelper {
+class Web3Manager {
     
     
 
-    func createWalletBySeedPhrase(password: String = "") -> WalletModel {
+    static func createWallet(name: String = "New HD Wallet", password: String = "") -> WalletModel {
         
-        let bitsOfEntropy: Int = 128 // Entropy is a measure of password strength. Usually used 128 or 256 bits.
+        let bitsOfEntropy: Int = 256 // Entropy is a measure of password strength. Usually used 128 or 256 bits.
         let mnemonics = try! BIP39.generateMnemonics(bitsOfEntropy: bitsOfEntropy)!
         let keystore = try! BIP32Keystore(
              mnemonics: mnemonics,
@@ -31,7 +31,10 @@ class Web3Manager: ProtocolWalletHelper {
         return wallet
     }
         
-    func laodWalletBy(_ seedPhrase: String, password: String = "") throws -> WalletModel {
+    static func laodWalletBy(_ seedPhrase: String,
+                             name: String = "Load HD Wallet",
+                             password: String = "") throws -> WalletModel {
+        
         if isValid(seedPhrase: seedPhrase) {
             do {
                 let keystore = try BIP32Keystore(
@@ -40,7 +43,7 @@ class Web3Manager: ProtocolWalletHelper {
                     mnemonicsPassword: "",
                     language: .english)!
                 let name = "Load HD Wallet"
-                let keyData = try! JSONEncoder().encode(keystore.keystoreParams)
+                let keyData = try JSONEncoder().encode(keystore.keystoreParams)
                 let address = keystore.addresses!.first!.address
                 let wallet = WalletModel(address: address, data: keyData, name: name, mnemonic: seedPhrase,isSeed: true)
                 saveSeedPhrase(seedPhrase)
@@ -55,13 +58,15 @@ class Web3Manager: ProtocolWalletHelper {
         
     }
     
-
-    func isValid(seedPhrase mnemonics: String) -> Bool {
+    
+    private
+    static func isValid(seedPhrase mnemonics: String) -> Bool {
         return BIP39.mnemonicsToEntropy(mnemonics, language: .english) != nil
     }
     
     
-    private func saveSeedPhrase(_ seeds: String){
+    private
+    static func saveSeedPhrase(_ seeds: String){
         // save your seed words in any way if you want
     }
 

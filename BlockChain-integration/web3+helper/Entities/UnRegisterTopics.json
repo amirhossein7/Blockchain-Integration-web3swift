@@ -1,0 +1,4 @@
+{"jsonrpc":"2.0",
+    "method":"eth_subscribe",
+    "id":1,
+    "params":["logs",{"address":"0xD297F92b9Fb4676e4e36624A7C958B18DebcF251","topics":["0xd5b4a9b07de9d31cbb91221f26ed32be6e1a98354463858af179f313d631a4ae"]}]}
