@@ -15,12 +15,13 @@ class WalletInfo: ProtocolWalletInfo {
 
     fileprivate var wallet: WalletModel
     fileprivate let seedPhares: String
-    fileprivate let password: String = ""
+    fileprivate let password: String
     
-    init(seeds: String) throws {
+    init(seeds: String, password: String = "") throws {
         self.seedPhares = seeds
+        self.password = password
         do {
-            wallet = try Web3Manager.laodWalletBy(seedPhares, password: password)
+            wallet = try WalletInfoHelper.loadWallet(seedPhares, password: password)
         }
     }
     
@@ -80,4 +81,33 @@ class WalletInfo: ProtocolWalletInfo {
 
     }
 
+}
+
+
+fileprivate class WalletInfoHelper {
+    
+    static func loadWallet(_ seedPhrase: String,
+                             name: String = "Load HD Wallet",
+                             password: String = "") throws -> WalletModel {
+        
+        if WalletManager.isValid(seedPhrase: seedPhrase) {
+            do {
+                let keystore = try BIP32Keystore(
+                    mnemonics: seedPhrase,
+                    password: password,
+                    mnemonicsPassword: "",
+                    language: .english)!
+                let keyData = try JSONEncoder().encode(keystore.keystoreParams)
+                let address = keystore.addresses!.first!.address
+                let wallet = WalletModel(address: address, data: keyData, name: name, mnemonic: seedPhrase,isSeed: true)
+                
+                return wallet
+            }catch {
+                throw Web3Error.processingError(desc: error.localizedDescription)
+            }
+        }else {
+            throw Web3Error.inputError(desc: "seed_words_invalid".EPLocalized())
+        }
+        
+    }
 }

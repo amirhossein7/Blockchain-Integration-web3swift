@@ -42,30 +42,24 @@ class RetrieveWalletViewController: UIViewController {
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    var wallet: WalletManager! = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        wallet = WalletManager(self)
         stopAnimating()
     }
 
     
     @objc
     private func retrieveWallet(){
-        var wallet: WalletModel
         
         textView.endEditing(true)
         startAnimating()
 
         if (textView.text != "") && (textView.text != placeholder) {
-            do{
-                wallet = try Web3Manager.laodWalletBy(textView.text)
-                retrieveSuccessDialog(wallet.address)
-            }catch {
-                stopAnimating()
-                let err = error as! Web3Error
-                errorDialog(title: "Warning", desc: err.errorDescription)
-            }
+            wallet.restoreWallet(textView.text)
         }else {
             errorDialog(title: "Warning", desc: "please enter your seed words")
         }
@@ -124,6 +118,19 @@ class RetrieveWalletViewController: UIViewController {
         super.touchesBegan(touches, with: event)
         textView.endEditing(true)
     }
+}
+
+extension RetrieveWalletViewController: WalletManagerDelegate {
+    func didReceivedWallet(wallet: WalletModel) {
+        retrieveSuccessDialog(wallet.address)
+    }
+    
+    func didFailedWallet(error: String) {
+        stopAnimating()
+        errorDialog(title: "error", desc: error)
+    }
+    
+    
 }
 
 extension RetrieveWalletViewController: UITextViewDelegate {

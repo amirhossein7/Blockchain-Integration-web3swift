@@ -8,7 +8,7 @@
 import UIKit
 
 class CreateWalletViewController: UIViewController {
-    
+
     
     @IBOutlet weak var textView: UITextView!{
         didSet{
@@ -35,20 +35,21 @@ class CreateWalletViewController: UIViewController {
             buttonBack.addTarget(self, action: #selector(backToWalletController), for: .touchUpInside)
         }
     }
+    
+    var wallet: WalletManager! = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.create { seeds in
-            self.activateView(seeds)
-        }
+        wallet =  WalletManager(self)
+        create()
     }
 
     
-    private func create(completion: @escaping (_ seeds: String) -> Void){
-        DispatchQueue.global(qos: .userInitiated).async {
-            let wallet = Web3Manager.createWallet()
-            completion(wallet.mnemonic ?? "failed")
+    private func create(){
+        DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+            guard let self = self else {print("have error with self in create"); return}
+            self.wallet.createWallet()
         }
     }
     
@@ -83,4 +84,19 @@ class CreateWalletViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
 
+}
+
+
+extension CreateWalletViewController: WalletManagerDelegate {
+    
+    func didReceivedWallet(wallet: WalletModel) {
+        print("wallet created succeessfully. address: \(wallet.address)")
+        activateView(wallet.mnemonic)
+    }
+    
+    func didFailedWallet(error: String) {
+        print("failed create wallet. message: \(error)")
+    }
+    
+    
 }

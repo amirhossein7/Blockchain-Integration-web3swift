@@ -13,7 +13,7 @@ struct WalletModel: Codable {
     let address: String
     let data: Data
     let name: String
-    let mnemonic: String?
+    let mnemonic: String
     let isSeed: Bool
     
 }
