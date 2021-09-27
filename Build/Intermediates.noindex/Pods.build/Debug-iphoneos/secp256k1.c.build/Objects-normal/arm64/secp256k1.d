@@ -1,0 +1,36 @@
+dependencies: \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/secp256k1.c \
+  /Users/amirhossein/Desktop/BlockChain-integration/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/secp256k1.c.build/module.modulemap \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/Target\ Support\ Files/secp256k1.c/secp256k1.c-prefix.pch \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/include/secp256k1.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/util.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/secp256k1-config.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/num_impl.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/num.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/field_impl.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/field_5x52_impl.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/field.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/field_5x52.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/field_5x52_int128_impl.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/scalar_impl.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/group.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/scalar.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/scalar_4x64.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/scalar_4x64_impl.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/group_impl.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/ecmult_impl.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/ecmult.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/scratch.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/ecmult_const_impl.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/ecmult_const.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/ecmult_gen_impl.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/ecmult_gen.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/hash_impl.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/hash.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/secp256k1_ec_mult_static_context.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/ecdsa_impl.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/ecdsa.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/eckey_impl.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/eckey.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/scratch_impl.h \
+  /Users/amirhossein/Desktop/BlockChain-integration/Pods/secp256k1.c/secp256k1/recovery_impl.h
