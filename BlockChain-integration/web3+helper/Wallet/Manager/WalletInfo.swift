@@ -106,7 +106,7 @@ fileprivate class WalletInfoHelper {
                 throw Web3Error.processingError(desc: error.localizedDescription)
             }
         }else {
-            throw Web3Error.inputError(desc: "seed_words_invalid".EPLocalized())
+            throw Web3Error.inputError(desc: "invalid seed words")
         }
         
     }
