@@ -18,8 +18,8 @@ target 'BlockChain-integration' do
   use_frameworks!
 
   # Pods for BlockChain-integration
-#  pod 'web3swift', :git => 'https://github.com/skywinder/web3swift.git', :branch => 'develop'
-  pod 'web3swift', :git => 'https://github.com/amirhossein7/web3swift.git', :branch => 'fix-websocket'
-  pod 'WalletConnectSwift', :git => 'https://github.com/DtechLabs/WalletConnectSwift.git'
+  pod 'web3swift', :git => 'https://github.com/skywinder/web3swift.git', :branch => 'develop'
+#  pod 'web3swift', :git => 'https://github.com/amirhossein7/web3swift.git', :branch => 'fix-websocket'
+  # pod 'WalletConnectSwift', :git => 'https://github.com/WalletConnect/WalletConnectSwiftV2'
   
 end

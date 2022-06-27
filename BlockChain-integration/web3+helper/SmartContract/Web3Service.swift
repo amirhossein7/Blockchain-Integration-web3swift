@@ -59,7 +59,7 @@ class Web3Service: Web3ServiceProtocol {
             // Get EthereumTransaction
             var tx = try wtx.assemble()
             // Sign the transaction
-            try Web3Signer.EIP155Signer.sign(transaction: &tx, privateKey: wallet.getPrivateKey())
+            try Web3Signer.signTX(transaction: &tx, keystore: wallet.getKeyStoreManager(), account: walletAddress, password: "")
             // Send Raw transaction
             provider.eth.sendRawTransactionPromise(tx).done { res in
                 self.waitUntilTXminde(provider: self.provider, txHash: res.hash) { receipt in
@@ -107,7 +107,7 @@ class Web3Service: Web3ServiceProtocol {
             // Get EthereumTransaction
             var tx = try wtx.assemble()
             // Sign the transaction
-            try Web3Signer.EIP155Signer.sign(transaction: &tx, privateKey: wallet.getPrivateKey())
+            try Web3Signer.signTX(transaction: &tx, keystore: wallet.getKeyStoreManager(), account: walletAddress, password: "")
             // Send Raw transaction
             provider.eth.sendRawTransactionPromise(tx).done {  res in
                 self.waitUntilTXminde(provider: self.provider, txHash: res.hash) { receipt in

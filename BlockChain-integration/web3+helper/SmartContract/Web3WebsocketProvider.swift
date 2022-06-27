@@ -72,44 +72,66 @@ class Web3WebsocketProvider {
 }
 
 extension Web3WebsocketProvider: WebSocketDelegate {
-    
-    func didReceive(event: WebSocketEvent, client: WebSocket) {
-        switch event {
-        case .connected(let headers):
-            isSocketConnected = true
-            delegate.socketConnected(headers)
-        case .disconnected(let reason, let code):
-            print("websocket is disconnected: \(reason) with code: \(code)")
-            isSocketConnected = false
-            delegate.gotError(Web3Error.connectionError)
-        case .text(let string):
-            resetWriteTimer()
-            delegate.receivedMessage(string)
-            break
-        case .binary(let data):
-            resetWriteTimer()
-            print("Received data")
-            delegate.receivedMessage(data)
-        case .ping(_):
-            print("ping")
-            break
-        case .pong(_):
-            print("pong")
-            break
-        case .viabilityChanged(_):
-            print("viabilityChanged")
-            break
-        case .reconnectSuggested(_):
-            print("reconnectSuggested")
-            break
-        case .cancelled:
-            print("cancelled")
-            isSocketConnected = false
-            delegate.gotError(Web3Error.nodeError(desc: "socket cancelled"))
-        case .error(let error):
-            isSocketConnected = false
-            delegate.gotError(error!)
-        }
+    func websocketDidConnect(socket: WebSocketClient) {
+        isSocketConnected = true
+//        delegate.socketConnected(socke)
     }
+    
+    func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
+        print("websocket is disconnected: \(error?.localizedDescription) with code: \(error.debugDescription)")
+        isSocketConnected = false
+        delegate.gotError(Web3Error.connectionError)
+    }
+    
+    func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
+        resetWriteTimer()
+        delegate.receivedMessage(text)
+    }
+    
+    func websocketDidReceiveData(socket: WebSocketClient, data: Data) {
+        resetWriteTimer()
+        print("Received data")
+        delegate.receivedMessage(data)
+    }
+    
+    
+//    func didReceive(event: WebSocketEvent, client: WebSocket) {
+//        switch event {
+//        case .connected(let headers):
+//            isSocketConnected = true
+//            delegate.socketConnected(headers)
+//        case .disconnected(let reason, let code):
+//            print("websocket is disconnected: \(reason) with code: \(code)")
+//            isSocketConnected = false
+//            delegate.gotError(Web3Error.connectionError)
+//        case .text(let string):
+//            resetWriteTimer()
+//            delegate.receivedMessage(string)
+//            break
+//        case .binary(let data):
+//            resetWriteTimer()
+//            print("Received data")
+//            delegate.receivedMessage(data)
+//        case .ping(_):
+//            print("ping")
+//            break
+//        case .pong(_):
+//            print("pong")
+//            break
+//        case .viabilityChanged(_):
+//            print("viabilityChanged")
+//            break
+//        case .reconnectSuggested(_):
+//            print("reconnectSuggested")
+//            break
+//        case .cancelled:
+//            print("cancelled")
+//            isSocketConnected = false
+//            delegate.gotError(Web3Error.nodeError(desc: "socket cancelled"))
+//        case .error(let error):
+//            isSocketConnected = false
+//            delegate.gotError(error!)
+//        }
+//    }
     
 }

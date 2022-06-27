@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,7 +17,6 @@
 		6012DEFB2702544300DFB259 /* ProtocolWalletInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6012DEF62702544300DFB259 /* ProtocolWalletInfo.swift */; };
 		602617B326F8EC4100B9BEE2 /* RetrieveWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602617B126F8EC4100B9BEE2 /* RetrieveWalletViewController.swift */; };
 		602617B426F8EC4100B9BEE2 /* RetrieveWalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 602617B226F8EC4100B9BEE2 /* RetrieveWalletViewController.xib */; };
-		605FB97D26F9030E000D55B5 /* WalletConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605FB97C26F9030E000D55B5 /* WalletConnect.swift */; };
 		6068CFFA26E393D600E7F2B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6068CFF926E393D600E7F2B4 /* AppDelegate.swift */; };
 		6068CFFC26E393D600E7F2B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6068CFFB26E393D600E7F2B4 /* SceneDelegate.swift */; };
 		6068CFFE26E393D600E7F2B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6068CFFD26E393D600E7F2B4 /* ViewController.swift */; };
@@ -29,10 +28,10 @@
 		6072B17826E8BBA00064B76E /* Web3WebsocketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6072B17726E8BBA00064B76E /* Web3WebsocketProvider.swift */; };
 		6072B17B26E8C27D0064B76E /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6072B17A26E8C27D0064B76E /* RepeatingTimer.swift */; };
 		6072B17E26E8CC940064B76E /* RegisterTopics.json in Resources */ = {isa = PBXBuildFile; fileRef = 6072B17D26E8CC940064B76E /* RegisterTopics.json */; };
-		608F07EF26F88A3F00EDB906 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608F07ED26F88A3F00EDB906 /* WalletViewController.swift */; };
 		608F07F026F88A3F00EDB906 /* WalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 608F07EE26F88A3F00EDB906 /* WalletViewController.xib */; };
 		608F07F526F89F8100EDB906 /* CreateWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608F07F326F89F8100EDB906 /* CreateWalletViewController.swift */; };
 		608F07F626F89F8100EDB906 /* CreateWalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 608F07F426F89F8100EDB906 /* CreateWalletViewController.xib */; };
+		60A7CCB0286989A30066229E /* WalletConnect in Frameworks */ = {isa = PBXBuildFile; productRef = 60A7CCAF286989A30066229E /* WalletConnect */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60A7CCB0286989A30066229E /* WalletConnect in Frameworks */,
 				39DFD0B68B3F3A15F1B021AD /* Pods_BlockChain_integration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +263,7 @@
 				6068CFF226E393D600E7F2B4 /* Sources */,
 				6068CFF326E393D600E7F2B4 /* Frameworks */,
 				6068CFF426E393D600E7F2B4 /* Resources */,
-				A45FF4EF3B5343F3446CEFBE /* [CP] Embed Pods Frameworks */,
+				AD0789FEDD34B63BADCA123C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,6 +271,7 @@
 			);
 			name = "BlockChain-integration";
 			packageProductDependencies = (
+				60A7CCAF286989A30066229E /* WalletConnect */,
 			);
 			productName = "BlockChain-integration";
 			productReference = 6068CFF626E393D600E7F2B4 /* BlockChain-integration.app */;
@@ -300,6 +301,7 @@
 			);
 			mainGroup = 6068CFED26E393D600E7F2B4;
 			packageReferences = (
+				60A7CCAE286989A30066229E /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */,
 			);
 			productRefGroup = 6068CFF726E393D600E7F2B4 /* Products */;
 			projectDirPath = "";
@@ -352,7 +354,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A45FF4EF3B5343F3446CEFBE /* [CP] Embed Pods Frameworks */ = {
+		AD0789FEDD34B63BADCA123C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -377,7 +379,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6068D01026E39AA000E7F2B4 /* ABI_info.swift in Sources */,
-				605FB97D26F9030E000D55B5 /* WalletConnect.swift in Sources */,
 				6012DEFA2702544300DFB259 /* ProtocolWalletHelper.swift in Sources */,
 				6068CFFE26E393D600E7F2B4 /* ViewController.swift in Sources */,
 				6012DEF82702544300DFB259 /* WalletManager.swift in Sources */,
@@ -391,7 +392,6 @@
 				602617B326F8EC4100B9BEE2 /* RetrieveWalletViewController.swift in Sources */,
 				6068CFFC26E393D600E7F2B4 /* SceneDelegate.swift in Sources */,
 				608F07F526F89F8100EDB906 /* CreateWalletViewController.swift in Sources */,
-				608F07EF26F88A3F00EDB906 /* WalletViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,6 +595,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		60A7CCAE286989A30066229E /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WalletConnect/WalletConnectSwiftV2";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		60A7CCAF286989A30066229E /* WalletConnect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60A7CCAE286989A30066229E /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
+			productName = WalletConnect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6068CFEE26E393D600E7F2B4 /* Project object */;
 }
